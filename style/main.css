@@ -1,0 +1,48 @@
+:root{
+    --color_link: white;
+    --bg_header: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+header{
+    position: sticky;
+    background-color: var(--bg_header);
+}
+
+.container{
+    display: flex;
+    padding: 1em;
+}
+
+.link-logo{
+    width: 10%;
+}
+
+.list-navigation{
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    gap:calc(10%/3);
+    justify-content: center;
+}
+
+.link{
+    color: var(--color_link);
+    padding: calc(1em/3);
+    border-radius: 10px;
+    transition: .3s ease;
+}
+
+.link:hover{
+    background-color: var(--color_link);
+    color: var(--bg_header);
+    padding: calc(1em/2);
+}
+
